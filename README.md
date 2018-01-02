@@ -1,6 +1,6 @@
 #### Budgt — Regain Control Over Your Money
 
-This is a visual guidelines for the Budgt application
+This is the visual guideline for Budgt application
 
 See below screenshot:
 ![Screenshot](https://github.com/TonyDurant/budgt/blob/master/screenshot.png)
