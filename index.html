@@ -8,17 +8,22 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/index.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  
 </head>
 <body>
 
 <!-- Reload Button & Account Settings -->
 <!-- Links to reload the list of transaction; and the link to user account settings -->
 <div class="container">
-    <a href=""><i class="fas fa-redo"></i></a>
-    <div class="float-right">
-        <a href=""><i class="fas fa-user"></i></a>
-    </div>
+    <center>
+        <div class="float-left">
+            <a href=""><i class="fas fa-redo"></i></a>
+        </div>
+        Main Wallet
+        <div class="float-right">
+            <a href=""><i class="fas fa-user"></i></a>
+        </div>
+    </center>
 </div>
 
 <!-- Main Wallet Transactions List -->
@@ -31,19 +36,19 @@
         December 26, 2017
     </h4>
     <table class="table">
-        <tbody>
+        <tbody id="entrydata">
             <tr>
                 <td><a href="" style="underlined">Pizza</a></td>
                 <td><i class="fas fa-utensils"></i></td>
                 <td style="text-align: right;"><span class="badge badge-pill badge-info">–19.80</span></td>
             </tr>
             <tr>
-                <td>Groceries</td>
+                <td>{{name}}</td>
                 <td><i class="fas fa-shopping-basket"></i></td>
                 <td style="text-align: right;"><span class="badge badge-pill badge-info">–81.40</span></td>
             </tr>
             <tr>
-                <td>Spotify</td>
+                <td>{{email}}</td>
                 <td><i class="fab fa-spotify"></i> <i class="fas fa-sync"></i></td>
                 <td style="text-align: right;"><span class="badge badge-pill badge-info">–11.50</span></td>
             </tr>
@@ -216,19 +221,20 @@
 <nav class="navbar fixed-bottom navbar-light bg-light">
     <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
         <a class="btn btn-outline-primary" href="#" role="button"><i class="fas fa-home"></i></a>
-        <a class="btn btn-outline-primary" href="#" role="button"><i class="fas fa-chart-line"></i></a>
+        <a class="btn btn-outline-primary" href="#" role="button"><i class="fas fa-chart-pie"></i></a>
         <a class="btn btn-outline-primary" href="#" role="button"><i class="fas fa-bullseye"></i></a>
         <a class="btn btn-outline-primary" href="#" role="button"><i class="fas fa-plus-square"></i></a>
     </div>
 </nav>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
 <script src="js/StickyDate.js"></script>
 <script src="js/StickySummary.js"></script>
+<script src="js/tableFiller.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </body>
 </html>
