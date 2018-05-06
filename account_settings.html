@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Budgt — Regain Control Over Your Money</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <!-- Reload Button & Account Settings -->
+    <!-- Links to reload the list of transaction; and the link to user account settings -->
+    <div class="container">
+        <center>
+            <div class="float-left">
+                <a href="">
+                    <i class="fas fa-redo"></i>
+                </a>
+            </div>
+            Main Wallet
+            <div class="float-right">
+                <a href="">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </center>
+    </div>
+
+    <!-- Main Wallet Transactions List -->
+    <div class="bd-callout bd-callout-warning">
+        <h2>Hi Anton!</h2>
+        </br>
+        <h4>Account Settings</h4>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputUsername">Username</label>
+                <input type="username" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Antonio" value="Antonio">
+                <small id="emailHelp" class="form-text text-muted">We use your Username to identify you during login. Don't forget your Username.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="anton@example.com">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. Moreover, we store your email hashed, so even we cannot access it. We won't send you promo emails.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Update Information</button>
+        </form>
+        </br>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Logout</button>
+        <button type="button" class="btn btn-danger btn-lg btn-block">Delete Account</button>
+
+    </div>
+    </br>
+
+    <!-- Navigation Buttons -->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+            <a class="btn btn-outline-primary" href="./index.html" role="button">
+                <i class="fas fa-home"></i>
+            </a>
+            <a class="btn btn-outline-primary" href="#" role="button">
+                <i class="fas fa-chart-pie"></i>
+            </a>
+            <a class="btn btn-outline-primary" href="#" role="button">
+                <i class="fas fa-bullseye"></i>
+            </a>
+            <a class="btn btn-outline-primary" href="#" role="button">
+                <i class="fas fa-plus-square"></i>
+            </a>
+        </div>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="js/StickyDate.js"></script>
+    <script src="js/StickySummary.js"></script>
+    <script src="js/tableFiller.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</body>
+
+</html>
